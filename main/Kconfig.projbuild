@@ -1,0 +1,28 @@
+menu "SEyTR S21B Options — Timer → Contador"
+
+config S21B_DIAG_PERIOD_MS
+    int "Periodo de diagnóstico (ms)"
+    range 100 60000
+    default 2000
+
+config S21B_TMR_PERIOD_US
+    int "Periodo del timer (µs)"
+    range 50 1000000
+    default 2000
+
+config S21B_MAX_TOKENS
+    int "Capacidad del semáforo contador (N)"
+    range 1 1024
+    default 32
+
+config S21B_TAKE_TIMEOUT_MS
+    int "Timeout del agregador (ms)"
+    range 0 10000
+    default 50
+
+config S21B_AGG_TASK_PRIO
+    int "Prioridad de la tarea agregadora"
+    range 1 15
+    default 6
+
+endmenu
