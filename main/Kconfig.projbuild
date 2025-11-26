@@ -25,4 +25,9 @@ config S21B_AGG_TASK_PRIO
     range 1 15
     default 6
 
+config S21B_AGG_TASK_WORK
+    int "Tiempo de trabajo de la tarea agregadora (us)"
+    range 100 1500
+    default 200
+
 endmenu

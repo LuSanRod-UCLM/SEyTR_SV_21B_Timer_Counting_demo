@@ -7,9 +7,10 @@
 #include "esp_log.h"
 #include "escenario_timer_count.h"
 
-static const char* TAG = "APP_S21B";
+static const char *TAG = "APP_S21B";
 
-void app_main(void){
+void app_main(void)
+{
     ESP_LOGI(TAG, "SEyTR S21B — Timer→Contador (ESP32-S3 / ESP-IDF 5.5.1)");
     escenario_timer_count_run();
 }
